@@ -1,96 +1,93 @@
 @use 'mixin';
 
 .about{
-    padding-bottom: 32px;
-    background-image: linear-gradient(30deg, color(navy-color) 33%, color(red-color) 33%, color(white-color) 83%);
+  display: flex;
+  justify-content: flex;
+  align-items: flex-start;
+  background-image: radial-gradient(circle 897px at 9% 80.3%, color(light-navy-color) 0%, color(navy-color) 100.2%);
+  height: 90%;
     
-    &__bio{
-      width: 90%;
-      margin: auto;
-      line-height: 1.2;
-      animation: opacity 4s ease-in;
-
-      @include mixin.keyframes(opacity) {
-        0% {
-            opacity: 0;
-        }
-          
-        100% {
-            opacity: 1;
-        }
-      }
-  
-      .text-secondary{
-        color: color(white-color);
-        text-transform: uppercase;
-      }
-
-      p{
-        margin-top: 15px;
-      }
+  &__bio-image {
+    width: 50%;
+    @include mixin.flexCenter(column);
   }
 
-  .jobs{
-    width: 90vw;
-    margin: auto;
+ &__bio {
+  width: 90%;
+  line-height: 1.2;
+  margin-top: 80px;
+  font-size: 17px;
 
-    @include mixin.gridCenter(32px);
+.underline {
+    display: inline-block;
+    position: relative;
+    color: color(red-color);
+
+  &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: color(red-color);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+  }
+  
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+  .flex {
+      display: flex;
+      flex-wrap:wrap;
+
+  .personalDetails {
+
+      i {
+        font-size: 40px;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  
+   .text-secondary {
+     color: color(white-color);
+     text-transform: uppercase;
+   }
+
+   p {
+     margin-top: 35px;
+     text-align: justify;
+     text-align-last: center;
+   }
+ }
+
+  .jobs{
+    width: 50%;
+    font-size: 17px;
 
       &__job{
           line-height: 1.2;
-          padding: 8px;
           
           h2, h3{
-              margin-top: 10px;
+            margin-top: 10px;
           }
-          
+
+          h4{
+            
+            color: color(red-color);
+          }
       }
 
       .text-secondary{
           color: color(white-color);
       }
-
-      .left{
-          animation: left2 2s ease-in;
-
-          @include mixin.keyframes(left2) {
-              0% {
-                  opacity: 0;
-                  transform: translateX(-30%);
-              }
-              
-              100% {
-                  opacity: 1;
-                  transform: translateX(0);
-              }
-          }
-        }
-
-        .right{
-          animation: right2 2s ease-in;
-          
-          @include mixin.keyframes(right2) {
-            0% {
-                opacity: 0;
-                transform: translateX(30%);
-            }
-              
-            100% {
-                opacity: 1;
-                transform: translateX(0);
-            }
-          }
-        }
+      
   }
-
-    &__bio-image{
-        height: 50vh;
-        width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3));
-        @include mixin.flexCenter(column);
-
-        h2{
-          margin-top: 50px;
-        }
-    }
 }

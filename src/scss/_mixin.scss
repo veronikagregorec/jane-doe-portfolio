@@ -24,9 +24,10 @@
     flex-direction: $direction;
 }
 
-@mixin gridCenter($gap) {
+@mixin gridCenter($cgap, $rgap) {
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr;
-    grid-gap: $gap;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap: $cgap;
+    grid-row-gap: $rgap;
 }
