@@ -2,6 +2,12 @@
 
 Portfolio with animations.
 
+## Folder Structure
+
+<b>dist</b> folder is for usage. It contains files to avoid hastle during usage.
+
+<b>src</b> folder contains separate files for source code and further tweaking.
+
 ## Screenshots
 
 Home page with contact button.
