@@ -8,6 +8,10 @@ Portfolio with animations.
 
 <b>src</b> folder contains separate files for source code and further tweaking.
 
+## Browser Compatibility
+
+All of the latest versions of <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and <b>Opera</b> browsers are supported.
+
 ## Screenshots
 
 Home page with contact button.
