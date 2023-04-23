@@ -12,11 +12,11 @@ About page with skills and experiences.
 
 ![](screenshots/about.png)
 
-Project with hover to individual project. Hover allows you to click on GitHub or on the website.
+Project page with hover to individual project. Hover allows you to click on GitHub or on the website.
 
 ![](screenshots/projects.png)
 
-Contact with footer.
+Contact page with footer.
 
 ![](screenshots/contact.png )
 
