@@ -21,7 +21,7 @@ All of the latest versions of <b>Chrome</b>, <b>Firefox</b>, <b>Edge</b> and <b>
   <li>cd root directory of the folder</li>
   <li>npm install</li>
   <li>gulp</li>
-  <li>Access localhost:5500 on your browser</li>
+  <li>access localhost:5500 on your browser</li>
 </ol>
 
 ## Screenshots
